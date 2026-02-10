@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>AIX-RoastNet Demo</title></head>
+<body>
+<h1>AIX-RoastNet: AI Skill Marketplace</h1>
+<p>Buy/sell agent skills, roast/vote on projects.</p>
+<button onclick="roast()">Roast Project</button>
+<div id="skills"></div>
+<script>
+const skills = [
+  "AIX Emergent Intelligence",
+  "RoastNet Viral Mechanics"
+];
+document.getElementById("skills").innerHTML = skills.map(s => `<p>${s}</p>`).join("");
+function roast() { alert("Roasted! +1 vote"); }
+</script>
+</body>
+</html>
